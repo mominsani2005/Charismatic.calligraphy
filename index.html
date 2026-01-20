@@ -1,0 +1,240 @@
+<!DOCTYPEhtml>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu with Sidebar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Hamburger Menu */
+        .menu-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 30px;
+            height: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .menu-icon div {
+            height: 4px;
+            background-color: black;
+            border-radius: 2px;
+            width: 100%;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #ffffff;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+
+        .sidebar .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+     
+</style>
+</head>
+<body>
+    <!-- Hamburger Menu -->
+    <div class="menu-icon" onclick="openSidebar()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <span class="close-btn" onclick="closeSidebar()">&times;</span>
+        <a href="signinup.html">Sign In</a>
+        <a href="yesterday.html">Home</a>
+        <a href="aboutus.html">About</a>
+         <a href="portfolio.html">GALLARY</a>
+        <a href="cource.html">Courses</a>
+        <a href="contact.html">Contact</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="feedback.html">Feedback</a>
+        </div>
+
+    <script>
+        // Open Sidebar
+        function openSidebar() {
+            document.getElementById("sidebar").style.width = "250px";
+        }
+
+        // Close Sidebar
+        function closeSidebar() {
+            document.getElementById("sidebar").style.width = "0";
+        }
+    </script>
+</body>
+</html>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calligraphy.org - Master the Art of Writing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            background-color: #1abc9c;
+        }
+        .section {
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .section h2 {
+            color: #2c3e50;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .about-text {
+            margin-top: 2rem;
+            line-height: 1.6;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Charismatic.calligraphy</h1>
+        <p>Master the Art of Beautiful Handwriting</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="">HOME</a>
+        <a href="#about">ABOUT US</a>
+        <a href="#gallery">GALLARY</a>
+        <a href="cource.html">COURSES</a>
+        <a href="#contact">CONTACT</a>
+        <a href="feedback.html">FEEDBACK</a>
+        
+    </nav>
+
+
+ 
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Charismatic.calligraphy</h2>
+        <p class="about-text">At Charismatic.calligraphy, we offer a variety of online courses designed to teach you the ancient art of calligraphy. Whether you’re a beginner or an expert, we have something for everyone. Explore different styles, tools, and techniques to make your writing truly stand out.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <h2>Calligraphy Gallery</h2>
+        <div class="gallery">
+            <img src="" alt="Calligraphy Sample 1">
+            <img src="  " alt="Calligraphy Sample 2">
+            <img src="  " alt="Calligraphy Sample 3">
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section">
+        <h2>Our Calligraphy Courses</h2>
+        <p>Join our expertly designed courses to learn the fundamentals or refine your calligraphy skills. Our step-by-step tutorials are suitable for all levels.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or want to learn more, feel free to reach out to us. We are here to help you on your calligraphy journey.</p>
+    </section><br>
+
+<div style="text-align:center;">
+<a style="font-size:20px;background-color:Green;padding:15px 35px 15px 35px;color:white;" 
+href="intro.html ">read more </a>
+</div>
+
+ 
+
+
+
+    <br><!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Charismatic.calligraphy | All Rights Reserved</p>
+
+   </footer>
+
+
+
+
+
+
+</body>
+</html>
